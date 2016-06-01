@@ -1,0 +1,16 @@
+<a href="#/create">Add a new Question</a> | <a href="#/">Logout</a>
+<h1>Hi : {{currentUser.name}}!</h1>
+
+
+    <div id= 'filter'>
+        <input type="text" ng-model="filter_name" placeholder="filter">
+    </div>
+
+    <table>
+        <tr><th>Question</th><th>total anser</th><th>Action</th></tr>
+        <tr ng-repeat="question in questions | filter: filter_name | orderBy: question">
+            <td>{{question.question}}</td>
+            <td> {{question.count}}</td>
+            <td><a href="#/question/{{question._id}}">Show</a> | <a href="#/anser/{{question._id}}">Anser</a></td>
+        </tr>
+    </table>

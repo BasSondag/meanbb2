@@ -1,0 +1,17 @@
+<a href='#/dashboard'>Home</a> | <a href='#/ansers/{{question._id}}'>anser this question</a> | <a href="#/">log out</a>
+
+<h1>{{question.question}}</h1>
+<h3>{{question.description}}</h3>
+<br>
+<br>
+<br>
+<div ng-repeat="anser in ansers">
+    <p>{{anser.username}}</p>
+    <h3>{{anser.anser}}</h3>
+    <p>{{anser.details}}</p>
+    <p>{{anser.count}}</p>
+    <button ng-click="addCount(anser)">Like</button>
+
+    <hr>
+</div>
+

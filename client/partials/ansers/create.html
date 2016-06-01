@@ -1,0 +1,17 @@
+<a href="#/dashboard">Home</a> | <a href="#/">Logout</a>
+<br>
+<br>
+<h1> {{question.question}}</h1>
+<h3>{{question.description}}</h3>
+
+<form>
+	<label>Anser:</label><br> 
+	<textarea ng-model='newAnser.anser' rows="5" cols="40"></textarea><br>
+	<label>Details: </label><br> 
+	<textarea ng-model='newAnser.details' rows="5" cols="40"></textarea><br>
+	<br>
+	<br>
+	<input type='submit' ng-click="addAnser(newAnser)" value = 'Add anser'>
+</form>
+
+<button><a href="#/dashboard">Cancel</a></button>

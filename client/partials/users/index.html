@@ -1,0 +1,6 @@
+<h1>Login in  </h1>
+<h2 ng-repeat = "error in messages">{{error}}</h2>
+<form>
+	Name:<input type="text" ng-model="newUser.name"> 
+	<input type="submit" ng-click="loginUser(newUser)" value="Add">
+</form>

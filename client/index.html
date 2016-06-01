@@ -1,0 +1,25 @@
+	<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Polls</title>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+  	<script src='app.js'></script>
+  	<script src= "controllers/users/usersController.js"></script>
+  	<script src="factories/userFactory.js"></script>
+  	<script src="controllers/questions/dashboardController.js"></script>
+  	<script src="factories/questionFactory.js"></script>
+  	<script src="controllers/questions/showsController.js"></script>
+  	<script src="controllers/questions/createsController.js"></script>
+    <script src="controllers/ansers/ansersController.js"></script>
+
+ </head>
+<body>
+	<div class = "container">
+	
+		<div ng-view></div>
+	</div>
+
+
+</body>
+</html>
